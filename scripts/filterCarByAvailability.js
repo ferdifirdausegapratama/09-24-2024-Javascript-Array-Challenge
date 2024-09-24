@@ -1,20 +1,20 @@
 function filterCarByAvailability(cars) {
-  // Sangat dianjurkan untuk console.log semua hal hehe
+  // highly recommended to console.log everything
   console.log(cars);
 
-  // Tempat penampungan hasil
+  // Place to store the results
   const result = [];
 
-  // Loop melalui setiap mobil dan periksa ketersediaannya
+  // Loop through each car and check its availability
   for (let i = 0; i < cars.length; i++) {
     if (cars[i].available) {
       result.push(cars[i]);
     }
   }
 
-  // Tampilkan hasil filter
+  // Display the filtered result
   console.log(result);
 
-  // Kembalikan array hasil filter berdasarkan availability
+  // Return the array of results filtered by availability
   return result;
 }
